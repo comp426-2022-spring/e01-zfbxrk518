@@ -3,7 +3,7 @@
     {
       "name": "CSS",
       "setup": "",
-      "run": "ORIG_HASH=6f0a9d21938c642724d9ab864490393e; ORIG_SIZE=1782; HASH=$(cat public/style.css | md5sum | tr -dc '0-9a-f'); SIZE=$(du -ba ./public/style.css | tr -dc '0-9'); if [ \"$SIZE\" -gt \"$ORIG_SIZE\" ] && [ \"$HASH\" != \"ORIG_HASH\" ]; then echo; \"PASS\"; else echo \"FAIL\"; fi",
+      "run": "ORIG_HASH=6f0a9d21938c642724d9ab864490393e; ORIG_SIZE=1782; HASH=$(cat public/style.css | md5sum | tr -dc '0-9a-f'); SIZE=$(du -ba ./public/style.css | tr -dc '0-9'); if [ \"$SIZE\" -gt \"$ORIG_SIZE\" ] && [ \"$HASH\" != \"ORIG_HASH\" ]; then echo \"PASS\"; else echo \"FAIL\"; fi",
       "input": "",
       "output": "PASS",
       "comparison": "exact",
