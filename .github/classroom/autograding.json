@@ -33,7 +33,7 @@
     {
       "name": "CSS validator help",
       "setup": "",
-      "run": "printf -- \"If your CSS is not validating, run it through the w3c CSS validator and  figure it out:\\n https://jigsaw.w3.org/css-validator/\\n\"",
+      "run": "printf -- \"If your CSS is not validating, run it through the w3c CSS validator and  figure it out:\\n\\nhttps://jigsaw.w3.org/css-validator/\\n\"",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -53,7 +53,7 @@
     {
       "name": "HTML validator help",
       "setup": "",
-      "run": "printf -- \"If your HTML is not validating, run it through the w3c markup validator and  figure it out:\\n https://validator.w3.org/#validate_by_input\\n\"",
+      "run": "printf -- \"If your HTML is not validating, run it through the w3c markup validator and  figure it out:\\n\\nhttps://validator.w3.org/#validate_by_input\\n\"",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -63,7 +63,7 @@
     {
       "name": "HTML and CSS validator documentation",
       "setup": "",
-      "run": "printf -- \"The autograder is using two Node packages to do the above validation.\\nTo un derstand their output, look at the documentation:\\n https://www.npmjs.com/package/html-validate\\n https://www.npmjs.com/package/css-validator\\nFigure it out.\\n\"",
+      "run": "printf -- \"The autograder is using two Node packages to do the above validation.\\n\\nTo understand their output, look at the documentation:\\n\\nhttps://www.npmjs.com/package/html-validate\\n\\nhttps://www.npmjs.com/package/css-validator\\n\\nFigure it out.\\n\"",
       "input": "",
       "output": "",
       "comparison": "included",
