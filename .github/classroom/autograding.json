@@ -2,8 +2,8 @@
   "tests": [
     {
       "name": "CSS",
-      "setup": "",
-      "run": "ORIG_HASH=6f0a9d21938c642724d9ab864490393e; ORIG_SIZE=1782; HASH=$(cat public/style.css | md5sum | tr -dc '0-9a-f'); SIZE=$(du -ba ./public/style.css | tr -dc '0-9') && [[ \"$SIZE\" -gt \"$ORIG_SIZE\" && \"$HASH\" != \"ORIG_HASH\" ]] && echo \"PASS\"",
+      "setup": "SHELL=/bin/bash",
+      "run": "SHELL=/bin/bash; ORIG_HASH=6f0a9d21938c642724d9ab864490393e; ORIG_SIZE=1782; HASH=$(cat public/style.css | md5sum | tr -dc '0-9a-f'); SIZE=$(du -ba ./public/style.css | tr -dc '0-9'); [[ \"$SIZE\" -gt \"$ORIG_SIZE\" && \"$HASH\" != \"ORIG_HASH\" ]] && echo \"PASS\"",
       "input": "",
       "output": "PASS",
       "comparison": "included",
@@ -13,9 +13,9 @@
     {
       "name": "HTML",
       "setup": "SHELL=/bin/bash",
-      "run": "ORIG_HASH=4778984198ab9d52e284aee502ba48b1; ORIG_SIZE=1632; HASH=$(cat public/index.html | md5sum | tr -dc '0-9a-f'); SIZE=$(du -ba ./public/index.html | tr -dc '0-9') && [[ \"$SIZE\" -gt \"$ORIG_SIZE\" && \"$HASH\" != \"ORIG_HASH\" ]] && echo \"PASS\"",
+      "run": "SHELL=/bin/bash; ORIG_HASH=4778984198ab9d52e284aee502ba48b1; ORIG_SIZE=1632; HASH=$(cat public/index.html | md5sum | tr -dc '0-9a-f'); SIZE=$(du -ba ./public/index.html | tr -dc '0-9'); [[ \"$SIZE\" -gt \"$ORIG_SIZE\" && \"$HASH\" != \"ORIG_HASH\" ]] && echo \"PASS\"",
       "input": "",
-      "output": "",
+      "output": "PASS",
       "comparison": "included",
       "timeout": 10,
       "points": 12500
